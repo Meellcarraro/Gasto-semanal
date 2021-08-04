@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;500&display=swap');
+
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+
+    background: #00d2ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family:  "Raleway", sans-serif;
+
+
+}
+h1{
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 2;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
+}
+.container{
+ background-color: white;
+ padding: 20px;
+ border-radius: 10px;
+ width: 800px;
+ min-height: 400px;
+margin: auto;
+display: flex;
+flex-flow: row wrap;
+justify-content: space-between;
+
+box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
+}
+#registro{
+    width: 35%;
+    align-self: center;
+    padding-left: 10px;
+}
+#registro label{
+     line-height: 2;
+     font-weight: 500;
+     letter-spacing: 1px;
+    
+}
+
+
+
+#registro input[type= text]{
+     width: 100%;
+     padding: 15px;
+     outline-color:#4EA8DE ;
+     border: 1px solid rgba(0, 0, 0, 0.4);
+     border-radius: 5px;
+     margin-bottom: 15px;
+}
+
+
+
+
+#registro ::placeholder{
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#btn{
+    padding: 5px;
+    background-color: #4EA8DE;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 140px;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.25s;
+    letter-spacing: 1px;
+}
+#btn:hover{
+    font-size: 17px;
+    background-color: #4EA8DE;
+    opacity: 0.9;
+}
+
+#gastos{
+   width: 60%;
+   display: flex;
+   flex-flow: column wrap ;
+   align-items: center;
+
+}
+#vista_gastos{
+    margin-bottom: 15px;
+}
+
+#vista_gastos h2{
+   text-align: center;
+   text-transform: uppercase;
+   color: rgba(0, 0, 0, 0.6);
+}
+#estados > div{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    margin-bottom: 10px;
+    color: white;
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+.presupuesto{
+    background-color: #17c3b2;
+    
+}
+.restante{
+    background-color: #fe6d73;
+}
+#presupuesto_monto, #restante_monto{
+    font-family: sans-serif;
+    margin-left: 5px;
+}
+
+.gasto_item{
+    width: 300px;
+    /* border: 1px solid rgba(0, 0, 0, 0.4); */
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+.gasto_item > .item_monto{
+    background-color: #4EA8DE;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    font-family: sans-serif;
+}
+
