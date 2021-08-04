@@ -1,7 +1,11 @@
 const nombre_gasto = document.getElementById('nombre_gasto'),
     cantidad_gasto = document.getElementById('cantidad_gasto'),
     boton = document.getElementById('btn'),
-    contenedor = document.getElementById('vista_gastos');
+    contenedor = document.getElementById('vista_gastos'),
+    presupuesto = document.getElementById('presupuesto_monto'), 
+    restante = document.getElementById('restante_monto');
+
+
 
 
 let nuevoGasto = (n, c)=>{
@@ -27,17 +31,34 @@ let nuevoGasto = (n, c)=>{
 
 };
 
+
+
+
 let limpiar = ()=>{
     nombre_gasto.value = "";
     cantidad_gasto.value = "";
 };
 
+let limite = 4000;
+presupuesto.textContent = `Presupuesto : $  ${limite}`;
+
+let disponible = 4000;
+restante.textContent = `Restante : $ ${disponible}`;
+// let gastos = 0;
+
 boton.addEventListener('click', function(){
     let  nombre = nombre_gasto.value ;
-    let cantidad = cantidad_gasto.value ;
+    let cantidad = parseFloat(cantidad_gasto.value) ;
 
-    nuevoGasto(nombre, cantidad);
-    limpiar();
-    
+    if(nombre!="" & cantidad!=""){
+        nuevoGasto(nombre, cantidad);
+         limpiar();
 
+         disponible -= cantidad;
+         restante.textContent = `Restante : $ ${disponible}`;
+
+    }
+   
 });
+
+

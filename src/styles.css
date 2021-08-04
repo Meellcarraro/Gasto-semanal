@@ -52,15 +52,20 @@ box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
 
 
 
-#registro input[type= text]{
+#registro input{
      width: 100%;
      padding: 15px;
-     outline-color:#4EA8DE ;
+     /* outline-color:#4EA8DE ; */
      border: 1px solid rgba(0, 0, 0, 0.4);
      border-radius: 5px;
      margin-bottom: 15px;
+     outline: none;
 }
 
+#registro input:focus{
+    border: 2px solid #4EA8DE;
+
+}
 
 
 
@@ -82,6 +87,7 @@ box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
     font-size: 16px;
     transition: 0.25s;
     letter-spacing: 1px;
+    outline: none;
 }
 #btn:hover{
     font-size: 17px;
@@ -115,6 +121,7 @@ box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
     color: white;
     text-transform: capitalize;
     border-radius: 5px;
+    /* font-weight: bold ; */
 }
 .presupuesto{
     background-color: #17c3b2;
