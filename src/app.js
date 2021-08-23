@@ -9,10 +9,11 @@ const nombre_gasto = document.getElementById('nombre_gasto'),
 
 
 let nuevoGasto = (n, c)=>{
-    console.log('me estoy ejecutando');
+    // console.log('me estoy ejecutando');
    let item_gasto =  document.createElement('div');
    item_gasto.setAttribute('class', 'gasto_item');
 
+   item_gasto.innerHTML = ' <img src="img/error.svg" class="btn_eliminar" alt="">';
 
 
    let item_nombre = document.createElement('p');
@@ -39,10 +40,10 @@ let limpiar = ()=>{
     cantidad_gasto.value = "";
 };
 
-let limite = 4000;
+let limite = 36000;
 presupuesto.textContent = `Presupuesto : $  ${limite}`;
 
-let disponible = 4000;
+let disponible = limite;
 restante.textContent = `Restante : $ ${disponible}`;
 // let gastos = 0;
 
@@ -50,15 +51,24 @@ boton.addEventListener('click', function(){
     let  nombre = nombre_gasto.value ;
     let cantidad = parseFloat(cantidad_gasto.value) ;
 
-    if(nombre!="" & cantidad!=""){
+    if(nombre!="" &  cantidad!=""){
         nuevoGasto(nombre, cantidad);
          limpiar();
 
          disponible -= cantidad;
          restante.textContent = `Restante : $ ${disponible}`;
 
-    }
+    };
+   
    
 });
 
+// let btnEliminar = document.getElementsByClassName('btn_eliminar'),
+//     itemsGasto = document.getElementsByClassName('gasto_item');
+// for(let i=0 ; i< btnEliminar.length ; i++){
+//     btnEliminar[i].addEventListener( "click", function(){
+//         console.log('hola');
+//     });
+
+// };
 

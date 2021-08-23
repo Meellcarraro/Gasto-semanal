@@ -144,6 +144,7 @@ box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
     justify-content: space-around;
     margin-bottom: 5px;
     align-items: center;
+    position: relative;
 }
 
 .gasto_item > .item_monto{
@@ -152,5 +153,18 @@ box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
     padding: 5px;
     border-radius: 3px;
     font-family: sans-serif;
+}
+
+.btn_eliminar{
+    width: 1rem;
+    position: absolute;
+    right: -27px;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.10s;
+}
+.btn_eliminar:hover{
+    opacity: 1;
+    width: 1.1rem;
 }
 
