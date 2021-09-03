@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;500&display=swap");
+#container-registro {
+  width: 800px;
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#container-registro #registro {
+  width: 35%;
+  margin-left: 10px;
+}
+
+#container-registro #registro label {
+  line-height: 2;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+#container-registro #gastos {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#container-registro #gastos #vista_gastos {
+  margin-bottom: 20px;
+}
+
+#container-registro #gastos #vista_gastos h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#container-registro #gastos #vista_gastos .gasto_item {
+  width: 300px;
+  /* border: 1px solid rgba(0, 0, 0, 0.4); */
+  -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#container-registro #gastos #vista_gastos .gasto_item .item_monto {
+  background-color: #4EA8DE;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  font-family: sans-serif;
+}
+
+#container-registro #gastos #estados p {
+  display: block;
+  background: red;
+  width: 290px;
+  height: 40px;
+  padding: 14px;
+  color: white;
+  text-transform: capitalize;
+  border-radius: 5px;
+}
+
+#container-registro #gastos #estados #restante {
+  background-color: #17c3b2;
+}
+
+#container-registro #gastos #estados #presupuesto {
+  background-color: #fe6d73;
+}
+
+#container-registro.active {
+  display: block;
+}
+
+#container-inicio {
+  width: 400px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#container-inicio #ingreso.error-limite {
+  border: 2px solid #d62828;
+}
+
+#container-inicio p {
+  width: 100%;
+  text-align: center;
+}
+
+#container-inicio p:first-child {
+  text-transform: uppercase;
+}
+
+#container-inicio #aviso-limite {
+  color: #d62828;
+  margin-top: 0px;
+  font-size: 12px;
+  display: none;
+}
+
+#container-inicio #aviso-limite.error-limite {
+  display: block;
+}
+
+#container-inicio #btn-inicio {
+  margin-top: 10px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* body {
+  background: #00d2ff;
+  /* fallback for old browsers */
+  background: -webkit-gradient(linear, left top, right top, from(#3a7bd5), to(#00d2ff));
+  background: linear-gradient(to right, #3a7bd5, #00d2ff);
+  font-family: "Raleway", sans-serif;
+}
+
+* body main {
+  margin: auto;
+  width: 900px;
+}
+
+* body main h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  margin-top: 40px;
+}
+
+* body main .container {
+  background: #fff;
+  padding: 25px;
+  margin: 10px;
+  margin: auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
+}
+
+* body main .container input {
+  width: 100%;
+  padding: 10px 15px;
+  /* outline-color:#4EA8DE ; */
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 15px;
+  outline: none;
+  text-align: center;
+}
+
+* body main .container input:focus {
+  border: 2px solid #4EA8DE;
+}
+
+* body main .container input::-webkit-input-placeholder {
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+* body main .container input:-ms-input-placeholder {
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+* body main .container input::-ms-input-placeholder {
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+* body main .container input::placeholder {
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+* body main .container .btn {
+  padding: 5px;
+  background-color: #4EA8DE;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 120px;
+  height: 35px;
+  border-radius: 5px;
+  font-size: 15px;
+  -webkit-transition: 0.50s;
+  transition: 0.50s;
+  outline: none;
+  margin: auto;
+  display: block;
+}
+
+* body main .container .btn:hover {
+  font-size: 16px;
+  background-color: #4EA8DE;
+  opacity: 0.9;
+}
+/*# sourceMappingURL=styles.css.map */

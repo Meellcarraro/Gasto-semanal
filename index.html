@@ -4,41 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/styles.css">
+    <link rel="stylesheet" href="src/styles/styles.css">
     <title>Gasto semanal</title>
 </head>
 <body>
-    <h1>gasto semanal</h1>
-   <div class="container">
-    
-       <div id="registro">
-           <label for="nombre_gasto"> Gasto:  </label>
-           <input type="text" placeholder="nombre de gasto" id="nombre_gasto">
-           <label for="cantidad_gasto">Cantidad : </label>
-           <input type="text"  placeholder="Cantidad en $" id="cantidad_gasto">
-           <button id="btn">agregar </button>
-       </div>
-       <div id="gastos">
-           <div id="vista_gastos">
-               <h2>gastos</h2>
-               <div class="gasto_item">
-                   <p class="item_nombre">comida</p>
-                   <p class="item_monto">$ 4234</p>
-                   <img src="img/error.svg" class="btn_eliminar" alt="">
-               </div>
-               
-           </div>
-           <div id="estados">
-                <div class="presupuesto  ">
-                    <p id="presupuesto_monto"></p>
-                </div>
-                <div class="restante  ">
-                    <p id="restante_monto"></p>
-                </div>
-           </div>
-       </div>
+    <main >
+        <h1>gasto semanal</h1>
+        <div id="container-inicio" class="container">
+            
+            <p>ingrese su presupuesto semanal</p>
+            <input type="number" id="ingreso">
+            <p id="aviso-limite">Ingrese un monto valido</p>
+            <button id="btn1" class="btn">Siguiente</button>
 
-   </div>
-    <script src="src/app.js"></script>
+        </div>
+        <div id="container-registro" class="container">
+         
+            <div id="registro">
+                <label for="nombre_gasto"> Gasto:  </label>
+                <input type="text" placeholder="nombre de gasto" id="nombre_gasto">
+                <label for="cantidad_gasto">Cantidad : </label>
+                <input type="text"  placeholder="Cantidad en $" id="cantidad_gasto">
+                <button id="btn2" class="btn">agregar </button>
+            </div>
+            <div id="gastos">
+                <div id="vista_gastos">
+                    <h2>gastos</h2>
+                    <!-- <div class="gasto_item">
+                        <p class="item_nombre">comida</p>
+                        <p class="item_monto">$ 4234</p>
+                    </div> -->
+                    
+                    
+                </div>
+                <div id="estados">
+                    <p id="presupuesto"></p>
+                    <p id="restante"></p>
+                </div>
+            </div>
+     
+        </div>
+    </main>
+        
+    <script src="src/app1.js"></script>
 </body>
 </html>

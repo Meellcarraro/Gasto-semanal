@@ -1,0 +1,31 @@
+$error-color : #d62828;
+    
+#container-inicio
+    width: 400px
+    flex-flow: column wrap
+    align-items: center
+    // display: none
+
+    #ingreso.error-limite
+        border: 2px solid $error-color
+    p
+        width: 100%
+        text-align: center
+        &:first-child
+            text-transform: uppercase
+    #aviso-limite
+        color: $error-color
+        margin-top: 0px
+        font-size: 12px
+        display: none
+    #aviso-limite.error-limite
+        display: block
+             
+            
+
+    
+    #btn-inicio
+        margin-top: 10px
+
+// #container-inicio.active
+//     display: none

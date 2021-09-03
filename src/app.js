@@ -1,9 +1,11 @@
 const nombre_gasto = document.getElementById('nombre_gasto'),
     cantidad_gasto = document.getElementById('cantidad_gasto'),
-    boton = document.getElementById('btn'),
+    boton = document.getElementById('btn-registro'),
+    boton2 = document.getElementById('btn-inicio'),
     contenedor = document.getElementById('vista_gastos'),
     presupuesto = document.getElementById('presupuesto_monto'), 
-    restante = document.getElementById('restante_monto');
+    restante = document.getElementById('restante_monto'),
+    ingresoLimite = document.getElementById('cantidad-limite');
 
 
 
@@ -31,7 +33,6 @@ let nuevoGasto = (n, c)=>{
     contenedor.appendChild(item_gasto);
 
 };
-
 
 
 
