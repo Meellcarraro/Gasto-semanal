@@ -15,12 +15,10 @@ let nuevoGasto = (n, c)=>{
    let item_gasto =  document.createElement('div');
    item_gasto.setAttribute('class', 'gasto_item');
 
-   item_gasto.innerHTML = ' <img src="img/error.svg" class="btn_eliminar" alt="">';
-
 
    let item_nombre = document.createElement('p');
     item_nombre.setAttribute('class', 'item_nombre');
-    let contenido_n = document.createTextNode(n);
+    let contenido_n = document.createTextNode(`${n}`);
     item_nombre.appendChild(contenido_n);
 
     let item_monto = document.createElement('p');
@@ -64,12 +62,6 @@ boton.addEventListener('click', function(){
    
 });
 
-// let btnEliminar = document.getElementsByClassName('btn_eliminar'),
-//     itemsGasto = document.getElementsByClassName('gasto_item');
-// for(let i=0 ; i< btnEliminar.length ; i++){
-//     btnEliminar[i].addEventListener( "click", function(){
-//         console.log('hola');
-//     });
 
-// };
+
 

@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;500&display=swap");
 #container-registro {
-  width: 800px;
-  min-height: 400px;
+  display: none;
+}
+
+#container-registro.active {
+  display: block;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,92 +15,73 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 85%;
 }
 
-#container-registro #registro {
-  width: 35%;
-  margin-left: 10px;
+#container-registro.active #registro {
+  width: 40%;
+  margin-left: 20px;
 }
 
-#container-registro #registro label {
-  line-height: 2;
-  font-weight: 500;
-  letter-spacing: 1px;
+#container-registro.active #registro #cantidad_gasto.error-gasto,
+#container-registro.active #registro #nombre_gasto.error-gasto {
+  border: 2px solid #fe6d73;
 }
 
-#container-registro #gastos {
-  width: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+#container-registro.active #gastos {
+  margin-right: 20px;
+  width: 40%;
 }
 
-#container-registro #gastos #vista_gastos {
-  margin-bottom: 20px;
-}
-
-#container-registro #gastos #vista_gastos h2 {
-  text-align: center;
+#container-registro.active #gastos #vista_gastos h2 {
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.6);
+  text-align: center;
 }
 
-#container-registro #gastos #vista_gastos .gasto_item {
-  width: 300px;
-  /* border: 1px solid rgba(0, 0, 0, 0.4); */
-  -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
-          box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
-  border-radius: 5px;
+#container-registro.active #gastos #vista_gastos .gasto_item {
+  width: 95%;
+  border: 2px solid rgba(142, 154, 175, 0.6);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-bottom: 5px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 5px;
+  margin: 10px auto;
 }
 
-#container-registro #gastos #vista_gastos .gasto_item .item_monto {
-  background-color: #4EA8DE;
+#container-registro.active #gastos #vista_gastos .item_monto {
+  background: #4EA8DE;
   color: white;
-  padding: 5px;
-  border-radius: 3px;
+  padding: 8px;
+  border-radius: 8px;
   font-family: sans-serif;
 }
 
-#container-registro #gastos #estados p {
-  display: block;
-  background: red;
-  width: 290px;
-  height: 40px;
-  padding: 14px;
+#container-registro.active #gastos #estados p {
+  padding: 10px;
   color: white;
-  text-transform: capitalize;
+  width: 80%;
+  margin: 10px auto;
   border-radius: 5px;
+  text-align: center;
+  font-family: sans-serif;
 }
 
-#container-registro #gastos #estados #restante {
-  background-color: #17c3b2;
+#container-registro.active #gastos #estados #presupuesto {
+  background: #17c3b2;
 }
 
-#container-registro #gastos #estados #presupuesto {
-  background-color: #fe6d73;
-}
-
-#container-registro.active {
-  display: block;
+#container-registro.active #gastos #estados #restante {
+  background: #fe6d73;
 }
 
 #container-inicio {
@@ -137,6 +121,10 @@
 
 #container-inicio #btn-inicio {
   margin-top: 10px;
+}
+
+#container-inicio.active {
+  display: none;
 }
 
 * {
