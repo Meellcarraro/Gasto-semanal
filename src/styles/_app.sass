@@ -14,10 +14,11 @@ $restante-color2: #fe6d73
     display: flex
     flex-flow: row wrap
     justify-content: space-between
-    width: 85%
+    // align-items: center
+    width: 90%
     #registro
         width: 40%
-        margin-left: 20px
+        margin: 40px 0px 0px 20px 
         #cantidad_gasto.error-gasto,
         #nombre_gasto.error-gasto
             border: 2px solid $restante-color2
@@ -30,7 +31,8 @@ $restante-color2: #fe6d73
                 color: rgba(0, 0,0 ,0.6 )
                 text-align: center
             .gasto_item
-                width: 95%
+                width: 92%
+                height: 50px
                 border: 2px solid rgba(142, 154, 175, 0.6)
                 display: flex
                 flex-flow: row wrap
@@ -38,18 +40,22 @@ $restante-color2: #fe6d73
                 justify-content: space-around
                 border-radius: 5px
                 margin: 10px auto
+                line-height: 0
             .item_monto 
                 background: #4EA8DE
+                display: block
                 color: white
-                padding: 8px
+                padding: 10px
                 border-radius: 8px
                 font-family: sans-serif
+                margin: 0px
                 
         #estados 
             p 
                 padding: 10px
                 color: white
                 width: 80%
+                max-width: 243px
                 margin: 10px auto
                 border-radius: 5px
                 text-align: center
